@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'neue-light';
+    src: url(./fonts/NM-Light.otf);
+}
+@font-face {
+    font-family: 'neue-reg';
+    src: url(./fonts/NM-Regular.otf);
+}
+@font-face {
+    font-family: 'neue-xb';
+    src: url(./fonts/NM-Ultrabold.otf);
+}
+$LauNegro: #333333;
+$LauBlanco:#DBDBDB;
+$LauAmarillo:#EFD967;
+$LauRosa:#FC8CEA;
+$LauVioleta:#A259FF;
+$LauVerde:#0ACF83;
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $LauNegro;
+    font-family: 'neue-light';
+}
+nav{
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $LauNegro;
+    overflow: hidden;
+    position: fixed;
+    z-index: 4;
+    .logo{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin: 0 2rem ;
+        background-image: url(./img/logoDefault.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: ease-in-out 100ms ;
+    }
+    .logo:hover{
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background-image: url(./img/logoHover.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    ul{
+        width: 60%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: $LauBlanco;
+                font-family: 'neue-reg';
+                font-size: 1rem;
+                .mail{
+                    width: 40px;
+                    height: 20px;
+                    display: inline-block;
+                    background-image: url(./img/email.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
+                .linkedin{
+                    width: 160px;
+                    height: 100px;
+                    display: inline-block;
+                    background-image: url(./img/LinkedInLogo.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .behance{
+                    width: 160px;
+                    height: 100px;
+                    display: inline-block;
+                    background-image: url(./img/BehanceLogo.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .cv{
+                    width: 260px;
+                    height: 80px;
+                    background-color: $LauAmarillo; 
+                    color: $LauNegro; 
+                    padding: .5rem  1.6rem .5rem;
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+                .mas{
+                    font-size: 3rem;
+                }
+            }
+            
+        }
+
+    }
+}
+.texto{
+    width: 100%;
+    height:auto;
+    padding: 20rem 8rem;
+    padding-bottom: 4rem;
+    p{
+        font-size: 5rem;
+        color: $LauBlanco;
+    }
+}
+.contenedor{
+    padding: 0 10rem;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    overflow: hidden;
+    .card{
+        width: 500px;
+        height: 500px;
+        border: solid 4px $LauNegro;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 2rem;
+            
+        }
+    }
+    .visualp{
+        background-color: $LauAmarillo;
+    }
+    .uxp{
+        background-color: $LauRosa;
+    }
+    .otrop{
+        background-color: $LauVioleta;
+    }
+    .verde{
+        background-color: $LauVerde;
+    }
+
+}
+.all{
+    width: 100%;
+    height: auto;
+    display: flex;
+    .left{
+        width: 50%;
+        height:100vh;
+        background-color: $LauRosa;
+        .texto-about{
+            width: 100%;
+            height:auto;
+            padding: 20rem  8rem;
+            
+            p{
+                font-size: 3rem;
+                color: $LauNegro;
+            } 
+        }
+    }
+    .right{
+        width: 50%;
+        height:100vh;
+        background-color: $LauNegro;
+        position: fixed;
+        left: 50%;
+    }
+
+}
+
+
+
+

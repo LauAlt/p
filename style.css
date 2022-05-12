@@ -1,0 +1,237 @@
+@font-face {
+  font-family: 'neue-light';
+  src: url(./fonts/NM-Light.otf);
+}
+
+@font-face {
+  font-family: 'neue-reg';
+  src: url(./fonts/NM-Regular.otf);
+}
+
+@font-face {
+  font-family: 'neue-xb';
+  src: url(./fonts/NM-Ultrabold.otf);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #333333;
+  font-family: 'neue-light';
+}
+
+nav {
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #333333;
+  overflow: hidden;
+  position: fixed;
+  z-index: 4;
+}
+
+nav .logo {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 2rem;
+  background-image: url(./img/logoDefault.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: ease-in-out 100ms;
+  transition: ease-in-out 100ms;
+}
+
+nav .logo:hover {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url(./img/logoHover.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav ul {
+  width: 60%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #DBDBDB;
+  font-family: 'neue-reg';
+  font-size: 1rem;
+}
+
+nav ul li a .mail {
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(./img/email.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+nav ul li a .linkedin {
+  width: 160px;
+  height: 100px;
+  display: inline-block;
+  background-image: url(./img/LinkedInLogo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav ul li a .behance {
+  width: 160px;
+  height: 100px;
+  display: inline-block;
+  background-image: url(./img/BehanceLogo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav ul li a .cv {
+  width: 260px;
+  height: 80px;
+  background-color: #EFD967;
+  color: #333333;
+  padding: .5rem  1.6rem .5rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+nav ul li a .mas {
+  font-size: 3rem;
+}
+
+.texto {
+  width: 100%;
+  height: auto;
+  padding: 20rem 8rem;
+  padding-bottom: 4rem;
+}
+
+.texto p {
+  font-size: 5rem;
+  color: #DBDBDB;
+}
+
+.contenedor {
+  padding: 0 10rem;
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  overflow: hidden;
+}
+
+.contenedor .card {
+  width: 500px;
+  height: 500px;
+  border: solid 4px #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contenedor .card p {
+  font-size: 2rem;
+}
+
+.contenedor .visualp {
+  background-color: #EFD967;
+}
+
+.contenedor .uxp {
+  background-color: #FC8CEA;
+}
+
+.contenedor .otrop {
+  background-color: #A259FF;
+}
+
+.contenedor .verde {
+  background-color: #0ACF83;
+}
+
+.all {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all .left {
+  width: 50%;
+  height: 100vh;
+  background-color: #FC8CEA;
+}
+
+.all .left .texto-about {
+  width: 100%;
+  height: auto;
+  padding: 20rem  8rem;
+}
+
+.all .left .texto-about p {
+  font-size: 3rem;
+  color: #333333;
+}
+
+.all .right {
+  width: 50%;
+  height: 100vh;
+  background-color: #333333;
+  position: fixed;
+  left: 50%;
+}
+/*# sourceMappingURL=style.css.map */
