@@ -140,6 +140,10 @@ nav ul li a .mas {
   font-size: 3rem;
 }
 
+nav ul li a .mas-about {
+  color: #EFD967;
+}
+
 .texto {
   width: 100%;
   height: auto;
@@ -212,19 +216,29 @@ nav ul li a .mas {
 
 .all .left {
   width: 50%;
-  height: 100vh;
+  height: auto;
   background-color: #FC8CEA;
 }
 
 .all .left .texto-about {
   width: 100%;
   height: auto;
-  padding: 20rem  8rem;
+  padding: 10rem  7rem;
 }
 
 .all .left .texto-about p {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #333333;
+}
+
+.all .left .texto-about p .dv {
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  background-image: url("./img/davinci.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .all .right {

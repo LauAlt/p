@@ -115,6 +115,9 @@ nav{
                 .mas{
                     font-size: 3rem;
                 }
+                .mas-about{
+                    color: $LauAmarillo;
+                }
             }
             
         }
@@ -173,16 +176,26 @@ nav{
     display: flex;
     .left{
         width: 50%;
-        height:100vh;
+        height: auto ;
         background-color: $LauRosa;
         .texto-about{
             width: 100%;
             height:auto;
-            padding: 20rem  8rem;
+            padding: 10rem  7rem;
             
             p{
-                font-size: 3rem;
+                font-size: 2rem;
                 color: $LauNegro;
+                .dv{
+                    width: 100px;
+                    height: 80px;
+                    display: inline-block;
+                    background-image: url('./img/davinci.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                }
             } 
         }
     }
