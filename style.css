@@ -147,18 +147,18 @@ nav ul li a .mas-about {
 .texto {
   width: 100%;
   height: auto;
-  padding: 20rem 8rem;
+  padding: 10rem 8rem;
   padding-bottom: 4rem;
 }
 
 .texto p {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #DBDBDB;
 }
 
 .contenedor {
-  padding: 0 10rem;
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   height: auto;
   display: -ms-grid;
   display: grid;
@@ -172,8 +172,8 @@ nav ul li a .mas-about {
 }
 
 .contenedor .card {
-  width: 500px;
-  height: 500px;
+  width: 310px;
+  height: 310px;
   border: solid 4px #333333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +187,7 @@ nav ul li a .mas-about {
 }
 
 .contenedor .card p {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .contenedor .visualp {
@@ -204,6 +204,33 @@ nav ul li a .mas-about {
 
 .contenedor .verde {
   background-color: #0ACF83;
+}
+
+.contenedor .card1:hover {
+  background-image: url(./img/ui-bosques-2.png);
+  background-size: cover;
+}
+
+.contenedor .card1:hover p {
+  display: none;
+}
+
+.contenedor .card2:hover {
+  background-image: url(./img/contacto.png);
+  background-size: cover;
+}
+
+.contenedor .card2:hover p {
+  display: none;
+}
+
+.contenedor .card3:hover {
+  background-image: url(./img/3.png);
+  background-size: cover;
+}
+
+.contenedor .card3:hover p {
+  display: none;
 }
 
 .all {
@@ -247,5 +274,39 @@ nav ul li a .mas-about {
   background-color: #333333;
   position: fixed;
   left: 50%;
+}
+
+.all .right .container {
+  width: 100%;
+  height: auto;
+  margin: 10rem 8rem;
+}
+
+.all .right p {
+  color: #DBDBDB;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.all .right .ux-tools {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 1rem;
+  display: inline-block;
+  background-image: url("./img/ux-tools.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.all .right .dev-tools {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  background-image: url("./img/dev-tools.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=style.css.map */

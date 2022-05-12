@@ -127,16 +127,16 @@ nav{
 .texto{
     width: 100%;
     height:auto;
-    padding: 20rem 8rem;
+    padding: 10rem 8rem;
     padding-bottom: 4rem;
     p{
-        font-size: 5rem;
+        font-size: 4rem;
         color: $LauBlanco;
     }
 }
 .contenedor{
-    padding: 0 10rem;
-    width: 100%;
+   margin: 0 auto;
+    width: 80%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -145,14 +145,14 @@ nav{
     grid-row-gap: 0px;
     overflow: hidden;
     .card{
-        width: 500px;
-        height: 500px;
+        width: 310px;
+        height: 310px;
         border: solid 4px $LauNegro;
         display: flex;
         align-items: center;
         justify-content: center;
         p{
-            font-size: 2rem;
+            font-size: 1.6rem;
             
         }
     }
@@ -168,7 +168,27 @@ nav{
     .verde{
         background-color: $LauVerde;
     }
-
+    .card1:hover{
+        background-image: url(./img/ui-bosques-2.png);
+        background-size: cover;
+        p{
+            display: none;
+        }
+    }
+    .card2:hover{
+        background-image: url(./img/contacto.png);
+        background-size: cover;
+        p{
+            display: none;
+        } 
+    }
+    .card3:hover{
+        background-image: url(./img/3.png);
+        background-size: cover;
+        p{
+            display: none;
+        }
+    }
 }
 .all{
     width: 100%;
@@ -205,6 +225,36 @@ nav{
         background-color: $LauNegro;
         position: fixed;
         left: 50%;
+        .container{
+            width: 100%;
+            height: auto;
+            margin: 10rem 8rem;
+        }
+        p{
+            color: $LauBlanco;
+            font-size: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+        .ux-tools{
+            width: 300px;
+            height: 300px;
+           margin-bottom: 1rem;
+            display: inline-block;
+            background-image: url('./img/ux-tools.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .dev-tools{
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            background-image: url('./img/dev-tools.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
 }
