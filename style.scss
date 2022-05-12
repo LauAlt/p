@@ -16,6 +16,16 @@ $LauAmarillo:#EFD967;
 $LauRosa:#FC8CEA;
 $LauVioleta:#A259FF;
 $LauVerde:#0ACF83;
+
+@mixin span-config {
+    display: inline-block;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+}
+
+
+
 ::-webkit-scrollbar{
     display: none;
 }
@@ -42,24 +52,15 @@ nav{
     position: fixed;
     z-index: 4;
     .logo{
-        display: inline-block;
+        @include span-config;
         width: 80px;
         height: 80px;
         margin: 0 2rem ;
         background-image: url(./img/logoDefault.svg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
         transition: ease-in-out 100ms ;
     }
     .logo:hover{
-        display: inline-block;
-        width: 80px;
-        height: 80px;
         background-image: url(./img/logoHover.svg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
     }
     ul{
         width: 60%;
@@ -78,30 +79,20 @@ nav{
                 .mail{
                     width: 40px;
                     height: 20px;
-                    display: inline-block;
+                    @include span-config;
                     background-image: url(./img/email.svg);
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-
                 }
                 .linkedin{
                     width: 160px;
                     height: 100px;
-                    display: inline-block;
+                    @include span-config;
                     background-image: url(./img/LinkedInLogo.svg);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
                 }
                 .behance{
                     width: 160px;
                     height: 100px;
-                    display: inline-block;
+                    @include span-config;
                     background-image: url(./img/BehanceLogo.svg);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
                 }
                 .cv{
                     width: 260px;
@@ -151,9 +142,13 @@ nav{
         display: flex;
         align-items: center;
         justify-content: center;
-        p{
-            font-size: 1.6rem;
-            
+        a{
+            text-decoration: none;
+            color: $LauNegro;
+            p{
+                font-size: 1.6rem;
+                
+            }
         }
     }
     .visualp{
@@ -168,27 +163,7 @@ nav{
     .verde{
         background-color: $LauVerde;
     }
-    .card1:hover{
-        background-image: url(./img/ui-bosques-2.png);
-        background-size: cover;
-        p{
-            display: none;
-        }
-    }
-    .card2:hover{
-        background-image: url(./img/contacto.png);
-        background-size: cover;
-        p{
-            display: none;
-        } 
-    }
-    .card3:hover{
-        background-image: url(./img/3.png);
-        background-size: cover;
-        p{
-            display: none;
-        }
-    }
+
 }
 .all{
     width: 100%;
@@ -209,12 +184,8 @@ nav{
                 .dv{
                     width: 100px;
                     height: 80px;
-                    display: inline-block;
+                    @include span-config;
                     background-image: url('./img/davinci.png');
-                    background-position: center;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-
                 }
             } 
         }
@@ -240,23 +211,66 @@ nav{
             width: 300px;
             height: 300px;
            margin-bottom: 1rem;
-            display: inline-block;
+           @include span-config;
             background-image: url('./img/ux-tools.svg');
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
         }
         .dev-tools{
             width: 300px;
             height: 200px;
-            display: inline-block;
+            @include span-config;
             background-image: url('./img/dev-tools.svg');
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
         }
     }
 
+}
+.imagenes{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    .img-left{
+        width: 70%;
+        height:100vh;
+        padding-top: 6rem;
+        p{
+            color: $LauBlanco;
+            margin: 2rem;
+
+           
+        }
+        .ruddy{
+            width: 1200px;
+            height: 800px;
+            background-image: url(./img/07-SHOPbosques.png);
+            @include span-config;
+        }
+        .jhonny{
+            width: 1200px;
+            height: 800px;
+            background-image: url(./img/03-MAINbosques.png);
+            @include span-config;
+        }
+
+    }
+    .text-right{
+        width: 30%;
+        height:100vh;
+        background-color: transparent;
+        .mobile{
+            width: 300px;
+            height: 1000px;
+            margin-top: 10% ;
+            @include span-config;
+            background-image: url(./img/SHOP.png);
+        }
+        .mobile-main{
+            width: 300px;
+            height: 1000px;
+            margin-top: 10% ;
+            @include span-config;
+            background-image: url(./img/MAIN.png); 
+        }
+    }
 }
 
 

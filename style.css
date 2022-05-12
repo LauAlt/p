@@ -50,25 +50,19 @@ nav {
 
 nav .logo {
   display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 80px;
   height: 80px;
   margin: 0 2rem;
   background-image: url(./img/logoDefault.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   -webkit-transition: ease-in-out 100ms;
   transition: ease-in-out 100ms;
 }
 
 nav .logo:hover {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
   background-image: url(./img/logoHover.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 nav ul {
@@ -100,30 +94,30 @@ nav ul li a .mail {
   width: 40px;
   height: 20px;
   display: inline-block;
-  background-image: url(./img/email.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(./img/email.svg);
 }
 
 nav ul li a .linkedin {
   width: 160px;
   height: 100px;
   display: inline-block;
-  background-image: url(./img/LinkedInLogo.svg);
-  background-size: contain;
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(./img/LinkedInLogo.svg);
 }
 
 nav ul li a .behance {
   width: 160px;
   height: 100px;
   display: inline-block;
-  background-image: url(./img/BehanceLogo.svg);
-  background-size: contain;
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-image: url(./img/BehanceLogo.svg);
 }
 
 nav ul li a .cv {
@@ -186,7 +180,12 @@ nav ul li a .mas-about {
           justify-content: center;
 }
 
-.contenedor .card p {
+.contenedor .card a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.contenedor .card a p {
   font-size: 1.6rem;
 }
 
@@ -204,33 +203,6 @@ nav ul li a .mas-about {
 
 .contenedor .verde {
   background-color: #0ACF83;
-}
-
-.contenedor .card1:hover {
-  background-image: url(./img/ui-bosques-2.png);
-  background-size: cover;
-}
-
-.contenedor .card1:hover p {
-  display: none;
-}
-
-.contenedor .card2:hover {
-  background-image: url(./img/contacto.png);
-  background-size: cover;
-}
-
-.contenedor .card2:hover p {
-  display: none;
-}
-
-.contenedor .card3:hover {
-  background-image: url(./img/3.png);
-  background-size: cover;
-}
-
-.contenedor .card3:hover p {
-  display: none;
 }
 
 .all {
@@ -262,10 +234,10 @@ nav ul li a .mas-about {
   width: 100px;
   height: 80px;
   display: inline-block;
-  background-image: url("./img/davinci.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url("./img/davinci.png");
 }
 
 .all .right {
@@ -294,19 +266,87 @@ nav ul li a .mas-about {
   height: 300px;
   margin-bottom: 1rem;
   display: inline-block;
-  background-image: url("./img/ux-tools.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url("./img/ux-tools.svg");
 }
 
 .all .right .dev-tools {
   width: 300px;
   height: 200px;
   display: inline-block;
-  background-image: url("./img/dev-tools.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  background-image: url("./img/dev-tools.svg");
+}
+
+.imagenes {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imagenes .img-left {
+  width: 70%;
+  height: 100vh;
+  padding-top: 6rem;
+}
+
+.imagenes .img-left p {
+  color: #DBDBDB;
+  margin: 2rem;
+}
+
+.imagenes .img-left .ruddy {
+  width: 1200px;
+  height: 800px;
+  background-image: url(./img/07-SHOPbosques.png);
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.imagenes .img-left .jhonny {
+  width: 1200px;
+  height: 800px;
+  background-image: url(./img/03-MAINbosques.png);
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.imagenes .text-right {
+  width: 30%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.imagenes .text-right .mobile {
+  width: 300px;
+  height: 1000px;
+  margin-top: 10%;
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./img/SHOP.png);
+}
+
+.imagenes .text-right .mobile-main {
+  width: 300px;
+  height: 1000px;
+  margin-top: 10%;
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./img/MAIN.png);
 }
 /*# sourceMappingURL=style.css.map */
